@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --tp-bg: #0A0A0F;
+  --tp-navy: #0A1628;
+  --tp-green: #00E64D;
+  --tp-blue: #0066FF;
+  --tp-gold: #D4A017;
+}
+
+html,body,#__next{
+  height:100%;
+}
+
+body{
+  background:var(--tp-bg);
+  color:#fff;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Glassmorphism card base */
+.glass-card{
+  background: rgba(10,22,40,0.6);
+  backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 16px;
+  border: 1px solid rgba(0,102,255,0.18);
+}
+
+.glass-card:hover{
+  border: 1px solid rgba(0,230,77,0.7);
+  box-shadow: 0 8px 30px rgba(0,230,77,0.08);
+}
+
+.grad-divider{
+  background: linear-gradient(90deg,#0066FF,#00E64D);
+  height:2px;
+}
+
+.tp-hero-gradient{
+  background: linear-gradient(135deg,#0A0A0F,#0A1628,#0d2a4a);
+}
